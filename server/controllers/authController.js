@@ -102,7 +102,6 @@ class AuthController {
       res.status(500).json({
         success: false,
         message: 'Registration failed. Please try again later.',
-        error: process.env.NODE_ENV === 'development' ? error.message : undefined
       });
     }
   }

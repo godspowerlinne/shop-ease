@@ -26,7 +26,7 @@ const limiter = rateLimit({
     message: "Too many requests, please try again later.",
 });
 
-app.use("/shopease", limiter, authRoute); // Apply rate limiting to auth routes
+app.use("/shopease/auth", limiter, authRoute); // Apply rate limiting to auth routes
 
 swaggerSetup(app); // Initialize Swagger
 
